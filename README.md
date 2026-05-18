@@ -77,7 +77,7 @@ All the information necessary for the fit (location of the input files, magnitud
 python -c 'from MorphoWithMultinest import run; run("configuration.yaml")'
 ```
 
-**Note:** The task taking most of the inference time is the psf convolution of each generated model with the psf. To speedup this process, by default and if possible, the code will try to use PyTorch in GPU mode. If there is no compatible GPU on the system, it will fallback on CPU mode and, if PyTorch is not installed, it will use Astropy instead. However, note that using PyTorch in CPU mode or Astropy significantly increased the inference time compared to the GPU mode.
+**Note:** _The task taking most of the inference time is the psf convolution of each generated model with the psf. To speedup this process, by default and if possible, the code will try to use PyTorch in GPU mode. If there is no compatible GPU on the system, it will fallback on CPU mode and, if PyTorch is not installed, it will use Astropy instead. However, note that using PyTorch in CPU mode or Astropy significantly increases the inference time compared to the GPU mode._
 
 # Outputs of the fit
 
@@ -92,6 +92,14 @@ Once the fit is finished, the fitter returns in the terminal the best fit result
 
 Then, it generates a PDF recap file showing the original images, best-fit models, and residuals:
 
+![Profile](readme/recap.svg)
 
-Finally, it produces a plot showing the median profile in each band with the 1 and 2 sigma uncertainties around:
+
+Afterwards, it produces a plot showing the median profile in each band with the 1 and 2 sigma uncertainties around:
+
+![Profile](readme/profile.svg)
+
+Finally, it produces a corner plot to check the covariance between parameters:
+
+![Profile](readme/corner.svg)
 
