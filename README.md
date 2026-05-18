@@ -92,14 +92,15 @@ Once the fit is finished, the fitter returns in the terminal the best fit result
 
 Then, it generates a PDF recap file showing the original images, best-fit models, and residuals:
 
-![Profile](readme/recap.svg)
-
+![A figure showing the original image of a galaxy in two bands, as well as their best fit models and their residuals](readme/recap.png)
 
 Afterwards, it produces a plot showing the median profile in each band with the 1 and 2 sigma uncertainties around:
 
-![Profile](readme/profile.svg)
+<div align="center">
+  <img src="readme/profile.png" alt="Plot showing the radial profile of a fit with Bayesian uncertainties" />
+</div>
 
 Finally, it produces a corner plot to check the covariance between parameters:
 
-![Profile](readme/corner.png)
+![A corner plot showing the covariance between fitted parameters](readme/corner.png)
 
