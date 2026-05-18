@@ -101,5 +101,5 @@ Afterwards, it produces a plot showing the median profile in each band with the 
 
 Finally, it produces a corner plot to check the covariance between parameters:
 
-![Profile](readme/corner.svg)
+![Profile](readme/corner.png)
 
